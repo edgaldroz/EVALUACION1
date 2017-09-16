@@ -32,15 +32,18 @@ public class Datos_Estudiante extends AppCompatActivity {
                 double N2 = Double.parseDouble(txtNota2.getText().toString());
                 double N3 = Double.parseDouble(txtNota3.getText().toString());
 
-                double promedio = (N1+N2+N3)/3;
 
-                if(txtNombre.getText().length()!=0 && txtCodigo.getText().length()!=0 && txtMateria.getText().length()!=0) {
+                if(txtNombre.getText().length()!=0 && txtCodigo.getText().length()!=0
+                        && txtMateria.getText().length()!=0) {
+
+                    double promedio = (N1+N2+N3)/3;
+                    String Promedio = Double.toString(promedio);
 
                     Intent data = getIntent();
                     data.putExtra("NOMBRE", txtNombre.getText().toString());
                     data.putExtra("CODIGO", txtCodigo.getText().toString());
                     data.putExtra("MATERIA", txtMateria.getText().toString());
-                    data.putExtra("PROMEDIO", promedio);
+                    data.putExtra("PROMEDIO", Promedio);
 
 
                     setResult(RESULT_OK, data);

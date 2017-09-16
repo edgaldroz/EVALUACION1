@@ -37,8 +37,8 @@ public class AdaptadorDatos extends ArrayAdapter<Estudiante> {
 
         // mostrar los datos
         lblNombre.setText(estudiante.Nombre);
-        lblMateria.setText(estudiante.Codigo);
-        lblCodigo.setText(estudiante.Materia);
+        lblCodigo.setText(estudiante.Codigo);
+        lblMateria.setText(estudiante.Materia);
         lblPromedio.setText(estudiante.Promedio);
 
         return convertView;
