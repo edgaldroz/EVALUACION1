@@ -37,7 +37,8 @@ public class Datos_Estudiante extends AppCompatActivity {
                         && txtMateria.getText().length()!=0) {
 
                     double promedio = (N1+N2+N3)/3;
-                    String Promedio = Double.toString(promedio);
+
+                    String Promedio = String.format("%.2f", promedio);
 
                     Intent data = getIntent();
                     data.putExtra("NOMBRE", txtNombre.getText().toString());

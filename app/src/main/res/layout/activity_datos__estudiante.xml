@@ -14,7 +14,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="29dp"
-        android:hint="Nombre" />
+        android:hint="Nombre"
+        android:selectAllOnFocus="false"
+        android:singleLine="true" />
 
     <EditText
         android:id="@+id/txtCodig"
@@ -23,7 +25,8 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/editText6"
         android:layout_marginTop="10dp"
-        android:hint="Código" />
+        android:hint="Código"
+        android:singleLine="true" />
 
     <EditText
         android:id="@+id/txtMateria"
@@ -32,7 +35,8 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/editText5"
         android:layout_marginTop="22dp"
-        android:hint="Materia" />
+        android:hint="Materia"
+        android:singleLine="true" />
 
     <EditText
         android:id="@+id/txtPrimerParcial"
@@ -41,14 +45,18 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/editText4"
         android:layout_marginTop="22dp"
-        android:hint="Primer Parcial : 30%" />
+        android:hint="Primer Parcial : 30%"
+        android:inputType="numberDecimal"
+        android:singleLine="true" />
 
     <EditText
         android:id="@+id/txtSegundoParcial"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="Segundo Parcial : 30%" />
+        android:hint="Segundo Parcial : 30%"
+        android:inputType="numberDecimal"
+        android:singleLine="true" />
 
     <EditText
         android:id="@+id/txtTercerParcial"
@@ -57,7 +65,9 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/txtNombre"
         android:layout_marginTop="19dp"
-        android:hint="Tercer Parcial : 40%" />
+        android:hint="Tercer Parcial : 40%"
+        android:inputType="numberDecimal"
+        android:singleLine="true" />
 
     <Button
         android:id="@+id/btnProcesar"
