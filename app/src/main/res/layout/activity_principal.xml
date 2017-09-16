@@ -9,21 +9,21 @@
 
     <Button
         android:id="@+id/btnNuevo"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="110dp"
-        android:layout_marginBottom="43dp"
+        android:layout_width="290dp"
+        android:layout_height="61dp"
         android:layout_gravity="center"
-        android:text="@string/btnNuevo" />
+        android:layout_marginBottom="43dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/btnNuevo"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textSize="15dp" />
 
     <Button
         android:id="@+id/btnLista"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
+        android:layout_width="290dp"
+        android:layout_height="61dp"
         android:layout_gravity="center"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/btnLista" />
+        android:text="@string/btnLista"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textSize="15dp" />
 </LinearLayout>
